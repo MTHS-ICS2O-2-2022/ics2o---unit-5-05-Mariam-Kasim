@@ -1,9 +1,115 @@
 <!DOCTYPE html>
-<html>
+<!-- 5-05 -->
+<html lang="en-ca">
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Movie Recommends" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Mariam Kasim" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <title>Triangles</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Note the addition for the selection component-->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">What are the three lengths?</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div id="image">
+          <img
+            class="right-image"
+            src="./images/Types-of-Triangles-what-is.webp"
+            alt="triangle"
+            width="400"
+            height="400"
+          />
+        </div>
+        <div class="page-content-instructions">
+          <div id="instructions">Insert Lengths:</div>
+        </div>
+        <!-- Simple Textfield -->
+        <form action="#">
+          Lengths:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern=""
+              id="lengthA"
+              aria-label="lengthA"
+            />
+            <label class="mdl-textfield__label" for="lengthA"></label>
+          </div>
+        </form>
+        <!-- Simple Textfield -->
+        <form action="#">
+          Lengths:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern=""
+              id="lengthB"
+              aria-label="lengthB"
+            />
+            <label class="mdl-textfield__label" for="lengthB"></label>
+          </div>
+        </form>
+        <!-- Simple Textfield -->
+        <form action="#">
+          Lengths:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern=""
+              id="lengthC"
+              aria-label="lengthC"
+            />
+            <label class="mdl-textfield__label" for="lengthC"></label>
+          </div>
+        </form>
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="myButtonClicked()">
+          Calculate
+        </button>
+        <br />
+        <div id="answer"></div>
+      </main>
+    </div>
   </body>
 </html>
