@@ -20,15 +20,15 @@ function myButtonClicked() {
   const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + Number((angleC).toFixed(2)) 
 
   if (sumOfAngles == 180) {
-    if (angleA==90 || angleB==90 || angleC==90) {
+    if (lengthA==90 || lengthB==90 || lengthC==90) {
       // output
       document.getElementById('answer').innerHTML = "The triangle is a right triangle"
     }
-    else if (angleA==60 && angleB==60 && angleC==60) {
+    else if (lengthA==60 && lengthB==60 && lengthC==60) {
       // output
       document.getElementById('answer').innerHTML = "The triangle is an equilateral triangle"
     }
-    else if (angleA==angleB || angleB==angleC || angleC==angleA) {
+    else if (lengthA==lengthB || lengthB==lengthC || lengthC==lengthA) {
       // output
       document.getElementById('answer').innerHTML = "The triangle is an isosceles triangle"
     }
